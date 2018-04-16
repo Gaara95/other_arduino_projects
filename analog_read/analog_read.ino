@@ -1,5 +1,4 @@
-// blink an LED at a speed based on 
-// analog input from analog pin 0
+// blink an LED at a speed based on analog input from analog pin 0
 
 const int LED = 13;
 
@@ -18,4 +17,5 @@ void loop() {
 	delay(val); // wait, using the reading from val as the wait time
 	digitalWrite(LED, LOW);
 	delay(val); // wait, using the reading from val as the wait time
+	Serial.println(val);
 }
